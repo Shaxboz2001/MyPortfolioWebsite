@@ -4,7 +4,7 @@ export const ServiceContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: #fff;
+  background-color: #f8f3f9;
   padding-top: 3rem;
 `;
 export const ServiceContainerText = styled.div`

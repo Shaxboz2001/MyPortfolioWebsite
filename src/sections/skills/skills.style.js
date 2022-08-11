@@ -2,20 +2,20 @@ import styled from "styled-components";
 
 export const SkillsContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  height: 100vh;
   align-items: center;
-  padding-left: calc(20vw);
-  background-color: #fff;
-  padding-top: 12rem;
-  
+  background-color: #f8f3f9;
+  width: 100vw;
 `;
 export const SkillsContainerText = styled.div`
-  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  padding-right: 2rem;
-  margin-right: 8rem;
+  background-color: #f8f3f9;
+  width: 76vw;
+  height: 100%;
+  padding: 4rem;
 `;
 
 export const SkillsParagText = styled.p`
@@ -28,6 +28,7 @@ export const SkillsParagText = styled.p`
 
 export const SkillsHeadText = styled.h1`
   font-size: 2rem;
+  color: rgba(2, 4, 56, 0.9);
 `;
 export const CardContainer = styled.div`
   display: flex;
@@ -71,14 +72,32 @@ export const SkillsProgress = styled.div`
 
 `
 export const SkillsProgressItems = styled.div`
-
-`
-export const SkillsName = styled.div`
-
-`
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: rgba(2, 4, 56, 0.9);
+`;
+export const SkillsName = styled.h4`
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: rgba(2, 4, 56, 0.9);
+`;
 export const SkillsProgressContainer = styled.div`
-
-`
+  width: 400px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+`;
 export const SkillsProgressResult = styled.div`
-
+width: ${(props) => props.width}%;
+background-color: ${props => props.color};
+height: 10px;
+border-radius: 10px;
 `
+export const SkillsResultPercent = styled.p``
+
+export const SkillsTypeContainer = styled.div``

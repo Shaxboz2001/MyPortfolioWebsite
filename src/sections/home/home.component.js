@@ -2,8 +2,10 @@ import React from "react";
 import LeftSidebar from "../left-sidebar/left-sidebar.component";
 import { HeadText, HomeContainer, HomeInfoText, ImageContainer, Link, ParagText } from "./home.style";
 import {AiOutlineDownload} from 'react-icons/ai'
+import { useSelector } from "react-redux";
 import ImgUrl from './../../assets/images/myImage.jpg'
 function Home() {
+  let color = useSelector((state) => state);
   return (
     <HomeContainer>
       <LeftSidebar />
@@ -21,7 +23,7 @@ function Home() {
           </a>
           &nbsp; link
         </ParagText>
-        <Link href="./../../assets/Ismoilov Shaxboz.pdf" download>
+        <Link href="./../../assets/Shaxboz Ismoilov.pdf" color={color} download>
           Download My CV
           <AiOutlineDownload size={"30px"}/>
         </Link>

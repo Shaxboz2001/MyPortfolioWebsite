@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 export const HomeContainer = styled.div`
   display: flex;
@@ -16,25 +16,22 @@ export const HomeInfoText = styled.div`
   flex-direction: column;
   /* margin-top: 8rem; */
   /* animation: textAnim 4s infinite linear forwards; */
-  width: 70vw;
+  width: 76vw;
   height: 100%;
   /* background: red; */
-  @keyframes textAnim  {
-    0%{
-        transform: translateY(50px);
-    }
-    100%{
-        transform: translateY(0);
-    }
+
+  @media screen and (max-width: 950px) {
+    width: 100vw;
   }
 `;
 export const HeadText = styled.h1`
-font-size: 3rem;
-line-height: 4rem;
-margin-bottom: 1rem;
-`
+  font-size: 3rem;
+  line-height: 4rem;
+  margin-bottom: 1rem;
+  color: rgba(2, 4, 56, 0.9);
+`;
 export const ParagText = styled.p`
-  color: #000;
+  color: rgba(2, 4, 56, 0.9);
   & > a {
     color: #5fddff;
     text-decoration: none;
@@ -45,19 +42,25 @@ export const ParagText = styled.p`
 export const Link = styled.a`
   color: #fff;
   text-decoration: none;
-  background-color: #909090;
+  background-color: ${props => props.color};
+  opacity: .7;
   width: fit-content;
   padding: 1rem 2rem;
   font-size: 1.5rem;
   margin-top: 1rem;
   font-weight: 800;
   letter-spacing: 2px;
+  transition: all 400ms ease;
   display: flex;
   align-items: center;
+  &:hover {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
 `;
 export const ImageContainer = styled.div`
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
 
   & > img {
     width: 100%;

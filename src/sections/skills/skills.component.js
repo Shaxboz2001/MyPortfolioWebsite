@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import LeftSidebar from "../left-sidebar/left-sidebar.component";
 import {
   SkillsContainer,
@@ -10,59 +11,79 @@ import {
   SkillsProgressContainer,
   SkillsProgressItems,
   SkillsProgressResult,
+  SkillsResultPercent,
+  SkillsTypeContainer,
 } from "./skills.style";
 
+
 function Skills() {
+  let color = useSelector(state => state);
   return (
     <SkillsContainer>
       <LeftSidebar />
       <SkillsContainerText>
         <SkillsParagText>MY SPECIALTY</SkillsParagText>
         <SkillsHeadText>MY SKILLS</SkillsHeadText>
-        <SkillsParagText>
-          The Big Oxmox advised her not to do so, because there were thousands
-          of bad Commas, wild Question Marks and devious Semikoli, but the
-          Little Blind Text didn’t listen. She packed her seven versalia, put
-          her initial into the belt and made herself on the way.
-        </SkillsParagText>
         <SkillsProgress>
+          <SkillsTypeContainer>
             <SkillsProgressItems>
-                <SkillsName>HTML</SkillsName>
-                <SkillsProgressContainer>
-                    <SkillsProgressResult></SkillsProgressResult>
-                </SkillsProgressContainer>
+              <SkillsName>HTML</SkillsName>
+              <SkillsResultPercent>90%</SkillsResultPercent>
             </SkillsProgressItems>
+            <SkillsProgressContainer>
+              <SkillsProgressResult width={90} color={color} />
+            </SkillsProgressContainer>
+          </SkillsTypeContainer>
+          <SkillsTypeContainer>
             <SkillsProgressItems>
-                <SkillsName>CSS</SkillsName>
-                <SkillsProgressContainer>
-                    <SkillsProgressResult></SkillsProgressResult>
-                </SkillsProgressContainer>
+              <SkillsName>CSS</SkillsName>
+              <SkillsResultPercent>92%</SkillsResultPercent>
             </SkillsProgressItems>
+            <SkillsProgressContainer>
+              <SkillsProgressResult width={92} color={color} />
+            </SkillsProgressContainer>
+          </SkillsTypeContainer>
+          <SkillsTypeContainer>
             <SkillsProgressItems>
-                <SkillsName>BOOTSTRAP</SkillsName>
-                <SkillsProgressContainer>
-                    <SkillsProgressResult></SkillsProgressResult>
-                </SkillsProgressContainer>
+              <SkillsName>Bootstrap</SkillsName>
+              <SkillsResultPercent>93%</SkillsResultPercent>
             </SkillsProgressItems>
+            <SkillsProgressContainer>
+              <SkillsProgressResult width={93} color={color} />
+            </SkillsProgressContainer>
+          </SkillsTypeContainer>
+          <SkillsTypeContainer>
             <SkillsProgressItems>
-                <SkillsName>SASS</SkillsName>
-                <SkillsProgressContainer>
-                    <SkillsProgressResult></SkillsProgressResult>
-                </SkillsProgressContainer>
+              <SkillsName>SCSS</SkillsName>
+              <SkillsResultPercent>83%</SkillsResultPercent>
             </SkillsProgressItems>
+            <SkillsProgressContainer>
+              <SkillsProgressResult width={83} color={color} />
+            </SkillsProgressContainer>
+          </SkillsTypeContainer>
+          <SkillsTypeContainer>
             <SkillsProgressItems>
-                <SkillsName>JAVASCRIPT</SkillsName>
-                <SkillsProgressContainer>
-                    <SkillsProgressResult></SkillsProgressResult>
-                </SkillsProgressContainer>
+              <SkillsName>Javascript</SkillsName>
+              <SkillsResultPercent>85%</SkillsResultPercent>
             </SkillsProgressItems>
+            <SkillsProgressContainer>
+              <SkillsProgressResult width={85} color={color} />
+            </SkillsProgressContainer>
+          </SkillsTypeContainer>
+          <SkillsTypeContainer>
             <SkillsProgressItems>
-                <SkillsName>REACT</SkillsName>
-                <SkillsProgressContainer>
-                    <SkillsProgressResult></SkillsProgressResult>
-                </SkillsProgressContainer>
+              <SkillsName>React</SkillsName>
+              <SkillsResultPercent>88%</SkillsResultPercent>
             </SkillsProgressItems>
+            <SkillsProgressContainer>
+              <SkillsProgressResult width={88} color={color} />
+            </SkillsProgressContainer>
+          </SkillsTypeContainer>
         </SkillsProgress>
+        <SkillsParagText>
+          Moreover, I am able to work with MySql,Ant Design,Git,Github,Gitlab
+          and etc.
+        </SkillsParagText>
       </SkillsContainerText>
     </SkillsContainer>
   );
