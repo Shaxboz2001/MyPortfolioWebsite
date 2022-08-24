@@ -6,7 +6,24 @@ export const HomeContainer = styled.div`
   width: 100vw;
   background-color: #f8f3f9;
   height: 100vh;
-
+@media screen and (max-width: 500px) {
+  h1 {
+    text-align: center;
+     font-size: 2rem;
+     line-height: normal;
+  }
+  p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  a {
+    font-size: 1.1rem;
+  }
+  img {
+    height: 80vw;
+    width: 80vw;
+  }
+}
 `;
 
 export const HomeInfoText = styled.div`

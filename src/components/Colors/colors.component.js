@@ -3,7 +3,7 @@ import { ColorContainer, ColorType } from "./colors.style";
 import {useDispatch, useSelector} from "react-redux"
 function Colors() {
   const [colorType, setColorType] = useState("red");
-  const colors = ["red", "blue", "yellow", "green", "pink"];
+  const colors = ["red", "blue", "yellow", "green", "blueviolet"];
   const colorsAll = useSelector(state => state);
   const dispatch = useDispatch();
    dispatch({
@@ -15,7 +15,7 @@ function Colors() {
        type: "change_color",
        payload: colorType,
      });
-     console.log(colorsAll);
+     
   }
   return (
       <ColorContainer>

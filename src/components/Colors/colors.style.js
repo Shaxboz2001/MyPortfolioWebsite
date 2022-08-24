@@ -12,5 +12,5 @@ width: 30px;
 border-radius: 50%;
 background-color: ${(props) => props.backColor};
 cursor: pointer;
-opacity: ${(props) => props.opacity};
+opacity: ${props => props.opacity};
 `
