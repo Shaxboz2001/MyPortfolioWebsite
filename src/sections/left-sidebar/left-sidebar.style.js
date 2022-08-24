@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const LeftSidebarContainer = styled.div`
-  width: 24vw;
+  width: 35%;
   height: 100vh;
   background-color: #ffffff;
   display: flex;
@@ -11,8 +11,18 @@ export const LeftSidebarContainer = styled.div`
   position: fixed;
   top: 0;
   left: 0;
+  transition: all .32s linear;
   @media screen and (max-width: 950px) {
-    transform: translateX(-100vw);
+    transform: ${(props) =>
+      props.transform ? "translateX(0)" : "translateX(-100vw)"};
+    width: 60%;
+    z-index: 12;
+  }
+  @media screen and (max-width: 620px) {
+    width: 70%;
+  }
+  @media screen and (max-width: 440px) {
+    width: 100%;
   }
 `;
 
@@ -87,7 +97,7 @@ export const CogIcon = styled.div`
 animation: iconAnim 3s linear infinite;
 position: fixed;
 top: 1rem;
-right: 1rem;
+right: ${props => props.transform ? "-48vw" : "1rem"};
 font-size: 2rem;
 display: flex;
 justify-content: center;
@@ -99,5 +109,38 @@ align-items: center;
   to {
     transform: rotate(360deg);
   }
+
 }
+@media screen and (max-width: 650px) {
+  display: none;
+}
+`
+export const Burger = styled.div`
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: ${(props) => (props.transform ? "80%" : "104vw")};
+  z-index: 450;
+  &.active-burger > div:nth-child(1) {
+    transform: translate(7px, 8px) rotate(45deg);
+  }
+  &.active-burger > div:nth-child(2) {
+    display: none;
+  }
+  &.active-burger > div:nth-child(3) {
+    transform: translate(7px, -8px) rotate(-45deg);
+  }
+  @media screen and (max-width:950px){
+    display: flex;
+  }
+`;
+export const BurgerLine = styled.div`
+width: 60px;
+height: 8px;
+background-color: ${props => props.color};
+transition: all .32s ease;
 `
