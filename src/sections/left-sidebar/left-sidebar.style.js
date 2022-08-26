@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const LeftSidebarContainer = styled.div`
-  width: 35%;
+  width: 25vw;
   height: 100vh;
   background-color: #ffffff;
   display: flex;
@@ -123,7 +123,8 @@ export const Burger = styled.div`
   align-items: center;
   position: fixed;
   top: 20px;
-  left: ${(props) => (props.transform ? "80%" : "104vw")};
+  left: ${(props) => (props.transform ? "80%" : "")};
+  right: ${(props) => props.transform ? "" : "-80%"};
   z-index: 450;
   &.active-burger > div:nth-child(1) {
     transform: translate(7px, 8px) rotate(45deg);
