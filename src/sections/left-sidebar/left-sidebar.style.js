@@ -122,9 +122,10 @@ export const Burger = styled.div`
   justify-content: center;
   align-items: center;
   position: fixed;
+  transition: all 0.32s ease;
   top: 20px;
   left: ${(props) => (props.transform ? "80%" : "")};
-  right: ${(props) => props.transform ? "" : "-80%"};
+  right: ${(props) => (props.transform ? "" : "-80%")};
   z-index: 450;
   &.active-burger > div:nth-child(1) {
     transform: translate(7px, 8px) rotate(45deg);
@@ -135,13 +136,13 @@ export const Burger = styled.div`
   &.active-burger > div:nth-child(3) {
     transform: translate(7px, -8px) rotate(-45deg);
   }
-  @media screen and (max-width:950px){
+  @media screen and (max-width: 950px) {
     display: flex;
   }
 `;
 export const BurgerLine = styled.div`
-width: 60px;
-height: 8px;
-background-color: ${props => props.color};
-transition: all .32s ease;
-`
+  width: 60px;
+  height: 8px;
+  background-color: ${(props) => props.color};
+  transition: all 0.32s ease;
+`;

@@ -9,7 +9,6 @@ import {
   AboutDetailRight,
   AboutHeadText,
   AboutParagText,
-  CardContainer,
   DetailLeftBottom,
   DetailLeftTop,
   DetailLeftTopLeft,
@@ -18,10 +17,6 @@ import {
   InfoName,
   InfoValue,
 } from "./about.style";
-import AboutCard from "./cards/card.component";
-import { SiBmcsoftware } from "react-icons/si";
-import { CgWebsite } from "react-icons/cg";
-import { DiResponsive } from "react-icons/di";
 import {useSelector}  from "react-redux"
 function About() {
   let color = useSelector((state) => state);

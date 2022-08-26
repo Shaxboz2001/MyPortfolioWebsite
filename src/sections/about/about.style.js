@@ -21,19 +21,23 @@ export const AboutContainerText = styled.div`
 `;
 
 export const AboutParagText = styled.p`
-display: flex;
-align-items: baseline;
-gap: 10px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
   & span {
     font-weight: bold;
     color: rgba(2, 4, 56, 0.9);
     font-size: 2rem;
   }
   & h3 {
-    color: ${props => props.color};
+    color: ${(props) => props.color};
   }
   color: #909090;
   width: 100%;
+  @media screen and (max-width: 550px) {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 `;
 
 export const AboutHeadText = styled.h1`
@@ -70,15 +74,20 @@ export const AboutDetailContainer = styled.div`
 `
 export const AboutDetailLeft = styled.div`
 display: flex;
+
 `
 export const AboutDetailRight = styled.div`
 display: flex;
 flex-direction: column;
+
 `
 export const DetailLeftTop = styled.div`
-display: flex;
-justify-content: space-around;
-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  @media screen and (max-width: 850px) {
+    flex-direction: column-reverse;
+  }
 `;
 export const DetailLeftTopLeft = styled.div`
 display: flex;
@@ -98,6 +107,7 @@ export const InfoContainer = styled.div`
   align-items: baseline;
   border-bottom: 1px solid #909090;
   padding: .7rem 0;
+  
 `;
 export const InfoName = styled.p`
   font-weight: bold;
@@ -113,10 +123,20 @@ export const AboutBtns = styled.div`
   padding-top: 1rem;
   display: flex;
   gap: 1rem;
+  text-align: center;
+  @media screen and (max-width: 850px) {
+    width:100%;
+    justify-content: space-evenly;
+  }
+  @media screen and (max-width: 450px) {
+    width:100%;
+    flex-direction: column;
+
+  }
   & > a {
     padding: 1rem 1.2rem;
     background-color: ${(props) => props.color};
-    opacity: .8;
+    opacity: 0.8;
     color: #fff;
     text-decoration: none;
     font-size: 1.4rem;
