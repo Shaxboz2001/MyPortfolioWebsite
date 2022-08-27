@@ -16,10 +16,13 @@ export const CardContainer = styled.div`
   transition: all 400ms ease;
   &:hover {
     transform: translateY(-20px);
-    background-color: rgba(90,90,0,0.7);
+    background-color: rgba(90, 90, 0, 0.7);
     & > * {
       color: #fff !important;
     }
+  }
+  @media screen and (max-width: 550px) {
+    width: 80%;
   }
 `;
 export const CardLogo = styled.div`

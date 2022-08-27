@@ -18,6 +18,9 @@ export const EducationRightSidebar = styled.div`
   @media screen and (max-width: 950px) {
     width: 100vw;
   }
+  @media screen and (max-width: 650px) {
+    padding: 2rem;
+  }
 `;
 export const EducationMainText = styled.h1`
   color: rgba(2, 4, 56, 0.9);
@@ -56,6 +59,9 @@ export const InfoEducationContainer = styled.div`
   border-radius: 20px;
   box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
   color: rgba(2, 4, 56, 0.9);
+  @media screen and (max-width: 650px) {
+    width: 100%;
+  }
 `;
 
 export const InfoPart = styled.div`

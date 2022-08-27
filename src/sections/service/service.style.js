@@ -6,6 +6,9 @@ export const ServiceContainer = styled.div`
   align-items: center;
   background-color: #f8f3f9;
   padding-top: 3rem;
+  @media screen and (max-width: 950px) {
+    width: 100%;
+  }
 `;
 export const ServiceContainerText = styled.div`
   width: 50%;
@@ -14,6 +17,12 @@ export const ServiceContainerText = styled.div`
   gap: 3rem;
   padding-right: 2rem;
   margin-right: 8rem;
+  @media screen and (max-width: 950px) {
+    width: 100%;
+    align-items: center;
+    margin-right: 0;
+    padding: 2rem;
+  }
 `;
 
 export const ServiceParagText = styled.p`
@@ -33,10 +42,13 @@ export const CardContainer = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 3rem;
+  @media screen and (max-width: 950px) {
+    justify-content: center;
+    gap: 2rem;
+  }
 `;
 
 export const Projects = styled.div`
-  /* width: 100%; */
   height: 300px;
   background-image: linear-gradient(
       0deg,
@@ -50,6 +62,9 @@ export const Projects = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @media screen and (max-width: 950px) {
+    width: 100%;
+  }
 `;
 
 export const Statistics = styled.div`

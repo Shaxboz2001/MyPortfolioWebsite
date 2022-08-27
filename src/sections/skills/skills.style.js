@@ -7,6 +7,7 @@ export const SkillsContainer = styled.div`
   align-items: center;
   background-color: #f8f3f9;
   width: 100vw;
+ 
 `;
 export const SkillsContainerText = styled.div`
   display: flex;
@@ -16,6 +17,11 @@ export const SkillsContainerText = styled.div`
   width: 76vw;
   height: 100%;
   padding: 4rem;
+  @media screen and (max-width: 950px) {
+    width: 100vw;
+    /* margin-top: 20vw; */
+    justify-content: center;
+  }
 `;
 
 export const SkillsParagText = styled.p`
@@ -74,10 +80,13 @@ export const SkillsProgress = styled.div`
 export const SkillsProgressItems = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 400px;
+  width: 50vw;
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: rgba(2, 4, 56, 0.9);
+  @media screen and (max-width: 550px) {
+    width: 70vw;
+  }
 `;
 export const SkillsName = styled.h4`
   font-size: 1.4rem;
@@ -85,12 +94,15 @@ export const SkillsName = styled.h4`
   color: rgba(2, 4, 56, 0.9);
 `;
 export const SkillsProgressContainer = styled.div`
-  width: 400px;
+  width: 50vw;
   height: 10px;
   display: flex;
   align-items: center;
   background-color: #fff;
   border-radius: 10px;
+  @media screen and (max-width: 550px) {
+    width: 70vw;
+  }
 `;
 export const SkillsProgressResult = styled.div`
 width: ${(props) => props.width}%;

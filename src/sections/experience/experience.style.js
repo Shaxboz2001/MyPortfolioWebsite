@@ -17,6 +17,7 @@ export const ExperienceRightSidebar = styled.div`
   height: 100vh;
   @media screen and (max-width: 950px) {
     width: 100vw;
+    padding: 2rem;
   }
 `;
 export const ExperienceMainText = styled.h1`
@@ -56,6 +57,7 @@ export const InfoExperienceContainer = styled.div`
   border-radius: 20px;
   box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
   color: rgba(2, 4, 56, 0.9);
+ 
 `;
 
 export const InfoPart = styled.div`
