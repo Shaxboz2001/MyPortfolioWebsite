@@ -57,6 +57,10 @@ emailjs
     }
   );
   e.target.reset();
+  setName("");
+  setEmail("");
+  setMessage("");
+  setSubject("");
   console.log("ishladi");
   }
   return (

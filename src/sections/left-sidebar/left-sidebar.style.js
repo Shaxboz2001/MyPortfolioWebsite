@@ -16,7 +16,7 @@ export const LeftSidebarContainer = styled.div`
     transform: ${(props) =>
       props.transform ? "translateX(0)" : "translateX(-100vw)"};
     width: 60%;
-    z-index: 12;
+    z-index: 21;
   }
   @media screen and (max-width: 620px) {
     width: 70%;
@@ -124,8 +124,8 @@ export const Burger = styled.div`
   position: fixed;
   transition: all 0.32s ease;
   top: 20px;
-  left: ${(props) => (props.transform ? "80%" : "")};
-  right: ${(props) => (props.transform ? "" : "-80%")};
+  left: 20px;
+  /* right: ${(props) => (props.transform ? "" : "-80%")}; */
   z-index: 450;
   &.active-burger > div:nth-child(1) {
     transform: translate(7px, 8px) rotate(45deg);

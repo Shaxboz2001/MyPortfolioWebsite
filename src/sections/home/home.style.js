@@ -9,20 +9,18 @@ export const HomeContainer = styled.div`
 @media screen and (max-width: 500px) {
   h1 {
     text-align: center;
-     font-size: 2rem;
+     font-size: 1.5rem;
      line-height: normal;
   }
+ 
   p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
   }
   a {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
-  img {
-    height: 80vw;
-    width: 80vw;
-  }
+
 }
 `;
 
@@ -34,7 +32,7 @@ export const HomeInfoText = styled.div`
   /* margin-top: 8rem; */
   /* animation: textAnim 4s infinite linear forwards; */
   width: 76vw;
-  height: 100%;
+  height: 100vh;
   /* background: red; */
 
   @media screen and (max-width: 950px) {
@@ -76,13 +74,16 @@ export const Link = styled.a`
   }
 `;
 export const ImageContainer = styled.div`
-  width: 300px;
-  height: 300px;
-
   & > img {
-    width: 100%;
-    height: 100%;
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
     border: 10px solid #fff;
+  }
+  @media screen and (max-width: 500px) {
+    img {
+      width: 50vw;
+      height: 50vw;
+    }
   }
 `;

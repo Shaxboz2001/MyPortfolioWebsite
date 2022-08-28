@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
   display: flex;
   justify-content: flex-end;
-  height: 100vh;
+  min-height: 100vh;
   align-items: center;
   background-color: #f8f3f9;
   width: 100vw;
@@ -14,9 +14,10 @@ export const AboutContainerText = styled.div`
   flex-direction: column;
   padding: 3rem;
   justify-content: space-around;
-  height: 100vh;
+  min-height: 100vh;
   @media screen and (max-width: 950px) {
     width: 100vw;
+    padding: 1rem;
   }
 `;
 
@@ -28,9 +29,13 @@ export const AboutParagText = styled.p`
     font-weight: bold;
     color: rgba(2, 4, 56, 0.9);
     font-size: 2rem;
+    @media screen and (max-width: 650px) {
+      margin: 1rem 0 0;
+    }
   }
   & h3 {
     color: ${(props) => props.color};
+    margin: 1rem 0;
   }
   color: #909090;
   width: 100%;
@@ -45,6 +50,7 @@ export const AboutHeadText = styled.h1`
   font-size: 2.5rem;
   font-weight: 900;
   position: relative;
+
   &::after {
     content: "";
     width: 60px;
@@ -62,6 +68,10 @@ export const AboutHeadText = styled.h1`
     position: absolute;
     left: 0;
     bottom: -30px;
+    right: 0;
+  }
+  @media screen and (max-width: 950px) {
+    margin: 4rem 0;
   }
 `;
 export const CardContainer = styled.div`
@@ -74,7 +84,6 @@ export const AboutDetailContainer = styled.div`
 `
 export const AboutDetailLeft = styled.div`
 display: flex;
-
 `
 export const AboutDetailRight = styled.div`
 display: flex;

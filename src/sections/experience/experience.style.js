@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ExperienceContainer = styled.div`
   display: flex;
   justify-content: flex-end;
-  height: 100vh;
+  min-height: 100vh;
   align-items: center;
   background-color: #f8f3f9;
   width: 100vw;
@@ -14,10 +14,10 @@ export const ExperienceRightSidebar = styled.div`
   flex-direction: column;
   padding: 3rem 5rem 1rem;
   justify-content: space-around;
-  height: 100vh;
+  min-height: 100vh;
   @media screen and (max-width: 950px) {
     width: 100vw;
-    padding: 2rem;
+    padding: 1rem;
   }
 `;
 export const ExperienceMainText = styled.h1`
@@ -43,6 +43,9 @@ export const ExperienceMainText = styled.h1`
     left: 0;
     bottom: -30px;
   }
+  @media screen and (max-width: 950px) {
+    margin-top: 3rem;
+  }
 `;
 
 export const InfoExperienceContainer = styled.div`
@@ -51,13 +54,13 @@ export const InfoExperienceContainer = styled.div`
   justify-content: space-around;
   background-color: #fff;
   width: 100%;
-  height: 80%;
+  height: 70vh;
   padding: 2rem;
   margin-top: 3rem;
   border-radius: 20px;
   box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
   color: rgba(2, 4, 56, 0.9);
- 
+ overflow: auto;
 `;
 
 export const InfoPart = styled.div`

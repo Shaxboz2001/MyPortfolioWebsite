@@ -21,7 +21,7 @@ function LeftSidebar() {
     // console.log("katta");
   }
   return (
-    <LeftSidebarContainer transform={transform}>
+    <>
       <Burger
         onClick={() => {
           setTransform(!transform);
@@ -34,16 +34,18 @@ function LeftSidebar() {
         <BurgerLine color={color} />
         <BurgerLine color={color} />
       </Burger>
-      <NameText color={color}>Shakhboz</NameText>
-      <NavBar />
-      <Colors />
-      <FooterLeftSidebar>
-        © Copyright 2022 All rights reserved
-      </FooterLeftSidebar>
       <CogIcon transform={transform}>
         <FaCog />
       </CogIcon>
-    </LeftSidebarContainer>
+      <LeftSidebarContainer transform={transform}>
+        <NameText color={color}>Shakhboz</NameText>
+        <NavBar />
+        <Colors />
+        <FooterLeftSidebar>
+          © Copyright 2022 All rights reserved
+        </FooterLeftSidebar>
+      </LeftSidebarContainer>
+    </>
   );
 }
 

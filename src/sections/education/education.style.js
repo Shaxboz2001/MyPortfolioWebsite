@@ -17,9 +17,7 @@ export const EducationRightSidebar = styled.div`
   height: 100vh;
   @media screen and (max-width: 950px) {
     width: 100vw;
-  }
-  @media screen and (max-width: 650px) {
-    padding: 2rem;
+    padding: 1rem;
   }
 `;
 export const EducationMainText = styled.h1`
@@ -45,6 +43,9 @@ export const EducationMainText = styled.h1`
     left: 0;
     bottom: -30px;
   }
+  @media screen and (max-width: 950px) {
+    margin-top: 3rem;
+  }
 `;
 
 export const InfoEducationContainer = styled.div`
@@ -59,6 +60,7 @@ export const InfoEducationContainer = styled.div`
   border-radius: 20px;
   box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
   color: rgba(2, 4, 56, 0.9);
+  overflow: auto;
   @media screen and (max-width: 650px) {
     width: 100%;
   }

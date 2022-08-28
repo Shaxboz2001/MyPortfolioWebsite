@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContactContainer = styled.div`
   display: flex;
   justify-content: flex-end;
-  height: 100vh;
+  min-height: 100vh;
   align-items: center;
   background-color: #f8f3f9;
   width: 100vw;
@@ -14,7 +14,7 @@ export const ContactRightSidebar = styled.div`
   flex-direction: column;
   padding: 3rem 5rem 1rem;
   justify-content: space-around;
-  height: 100vh;
+  min-height: 100vh;
   @media screen and (max-width: 950px) {
     width: 100vw;
     padding: 2rem;
@@ -43,12 +43,18 @@ export const ContactMainText = styled.h1`
     left: 0;
     bottom: -30px;
   }
+  @media screen and (max-width: 950px) {
+    margin: 3rem 0;
+  }
 `;
 
 export const ContactTypeContainer = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-around;
+  @media screen and (max-width: 950px) {
+    margin: 2rem 0;
+  }
   @media screen and (max-width: 650px) {
     flex-direction: column;
   }
@@ -58,6 +64,7 @@ export const ContactType = styled.div`
   flex-direction: column;
   gap: 1rem;
   align-items: center;
+ 
   @media screen and (max-width: 650px) {
     flex-direction: row;
    align-items: baseline;
