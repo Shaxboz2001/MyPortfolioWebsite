@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SkillsContainer = styled.div`
   display: flex;
   justify-content: flex-end;
-  height: 100vh;
+  min-height: 100vh;
   align-items: center;
   background-color: #f8f3f9;
   width: 100vw;
@@ -15,7 +15,7 @@ export const SkillsContainerText = styled.div`
   gap: 3rem;
   background-color: #f8f3f9;
   width: 76vw;
-  height: 100%;
+  min-height: 100%;
   padding: 4rem;
   @media screen and (max-width: 950px) {
     width: 100vw;
@@ -30,6 +30,10 @@ export const SkillsParagText = styled.p`
     color: #000;
   }
   color: #909090;
+  @media screen and (max-width: 950px) {
+    margin-top: 3rem;
+  }
+
 `;
 
 export const SkillsHeadText = styled.h1`

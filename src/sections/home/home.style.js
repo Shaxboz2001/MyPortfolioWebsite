@@ -5,7 +5,7 @@ export const HomeContainer = styled.div`
   justify-content: right;
   width: 100vw;
   background-color: #f8f3f9;
-  height: 100vh;
+  min-height: 100vh;
 @media screen and (max-width: 500px) {
   h1 {
     text-align: center;
@@ -32,7 +32,7 @@ export const HomeInfoText = styled.div`
   /* margin-top: 8rem; */
   /* animation: textAnim 4s infinite linear forwards; */
   width: 76vw;
-  height: 100vh;
+  min-height: 100vh;
   /* background: red; */
 
   @media screen and (max-width: 950px) {

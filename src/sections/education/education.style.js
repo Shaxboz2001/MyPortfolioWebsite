@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const EducationContainer = styled.div`
   display: flex;
   justify-content: flex-end;
-  height: 100vh;
+  min-height: 100vh;
   align-items: center;
   background-color: #f8f3f9;
   width: 100vw;
@@ -14,7 +14,7 @@ export const EducationRightSidebar = styled.div`
   flex-direction: column;
   padding: 3rem 5rem 1rem;
   justify-content: space-around;
-  height: 100vh;
+  min-height: 100vh;
   @media screen and (max-width: 950px) {
     width: 100vw;
     padding: 1rem;
