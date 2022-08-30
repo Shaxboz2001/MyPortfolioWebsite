@@ -61,6 +61,10 @@ export const InfoEducationContainer = styled.div`
   box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
   color: rgba(2, 4, 56, 0.9);
   overflow: auto;
+  @media screen and (max-width: 950px) {
+    gap: 2rem;
+    padding-top: 6rem;
+  }
   @media screen and (max-width: 650px) {
     width: 100%;
   }

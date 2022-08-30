@@ -60,7 +60,11 @@ export const InfoExperienceContainer = styled.div`
   border-radius: 20px;
   box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
   color: rgba(2, 4, 56, 0.9);
- overflow: auto;
+  overflow: auto;
+  @media screen and (max-width: 950px) {
+    gap: 2rem;
+    padding-top: 6rem;
+  }
 `;
 
 export const InfoPart = styled.div`
@@ -69,7 +73,7 @@ export const InfoPart = styled.div`
   /* justify-content: space-around; */
   flex-direction: column;
   border-left: 2px solid ${(props) => props.color};
-  height: calc(100% / 3);
+  min-height: calc(100% / 3);
   padding-left: 2rem;
   position: relative;
   &::before {
@@ -82,8 +86,10 @@ export const InfoPart = styled.div`
     top: 0px;
     left: -10px;
   }
+
 `;
-export const ExperienceDuration = styled.p``;
+export const ExperienceDuration = styled.p`
+`;
 export const ExperienceTypeAbout = styled.p``;
 export const ExperienceTypeName = styled.p`
   font-size: 1.5rem;
