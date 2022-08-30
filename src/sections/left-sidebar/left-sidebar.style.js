@@ -70,6 +70,9 @@ export const NameText = styled.h1`
     left: -10px;
     top: -10px;
   }
+  @media screen and (max-width: 950px) {
+    font-size: 1.5rem;
+  }
 `;
 export const JobNameText = styled.p`
   color: #b8b8bd;
@@ -125,7 +128,7 @@ export const Burger = styled.div`
   transition: all 0.32s ease;
   top: 20px;
   left: 20px;
-  /* right: ${(props) => (props.transform ? "" : "-80%")}; */
+  cursor: pointer;
   z-index: 450;
   &.active-burger > div:nth-child(1) {
     transform: translate(7px, 8px) rotate(45deg);
@@ -141,8 +144,8 @@ export const Burger = styled.div`
   }
 `;
 export const BurgerLine = styled.div`
-  width: 60px;
-  height: 8px;
+  width: 50px;
+  height: 7px;
   background-color: ${(props) => props.color};
   transition: all 0.32s ease;
 `;

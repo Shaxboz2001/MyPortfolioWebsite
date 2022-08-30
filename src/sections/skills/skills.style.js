@@ -19,7 +19,6 @@ export const SkillsContainerText = styled.div`
   padding: 4rem;
   @media screen and (max-width: 950px) {
     width: 100vw;
-    /* margin-top: 20vw; */
     justify-content: center;
   }
 `;
