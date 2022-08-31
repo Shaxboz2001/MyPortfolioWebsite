@@ -73,7 +73,7 @@ export const InfoPart = styled.div`
   /* justify-content: space-around; */
   flex-direction: column;
   border-left: 2px solid ${(props) => props.color};
-  min-height: calc(100% / 3);
+  height: calc(100% / 3);
   padding-left: 2rem;
   position: relative;
   &::before {

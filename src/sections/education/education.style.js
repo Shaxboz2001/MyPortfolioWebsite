@@ -54,7 +54,7 @@ export const InfoEducationContainer = styled.div`
   justify-content: space-around;
   background-color: #fff;
   width: 100%;
-  height: 80%;
+  height: 70vh;
   padding: 2rem;
   margin-top: 3rem;
   border-radius: 20px;
