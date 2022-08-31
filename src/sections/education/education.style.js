@@ -64,6 +64,7 @@ export const InfoEducationContainer = styled.div`
   @media screen and (max-width: 950px) {
     gap: 2rem;
     padding-top: 6rem;
+    height: 80%;
   }
   @media screen and (max-width: 650px) {
     width: 100%;
